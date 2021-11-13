@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All tags</title>
+</head>
+
+<body>
+    <pre>
+ <h1>Formatowanie tekstu</h1>
+ commment - &lt;!----&gt;
+ &lt;!DOCTYPE html&gt; - mówi przeglądarce, jaki to rodzaj dokumentu.
+ &lt; a &gt; - link
+ &lt; abbr &gt; - okno kontekstowe.
+ &lt; address &gt; - dane autora i inne (mało przydatne).
+ &lt;area shape="kształt" coords="koordynaty" href="link aktywowany po kliknięciu" alt="po najechaniu"&gt; - tworzy strefy na zdjęciu, które są interaktywne.
+ &lt; article &gt; - akapit
+ &lt; aside &gt; - nie użyteczne
+ &lt; audio controls &gt; - dodanie muzyki w środku tag source
+ &lt; b &gt; pogrubia tekst
+ &lt; bdi &gt; pomaga przy arabskim pisaniu od prawej strony
+ &lt; bdo &gt; ułyt do tsket ezsip (w dir wybierasz, w która stronę)
+ &lt; big &gt; html4 powiększenie tekstu
+ &lt; blockqiute &gt; - dodaje cytat oraz źródło? Mało potrzebne
+ &lt; cite &gt; - pisze się w nim tytuły oraz nazwy (dodaje czcionkę italic). Daje się go np. w p tagu
+ &lt; code &gt; - zmienia czcionkę na bardziej "kodową"
+ &lt; del &gt; - przekreśla tekst
+ &lt; dfn &gt; - dodaje do tekstu okno dialogowe oraz zmienia czcionkę
+ &lt; em &gt; - dodaje czcionkę italic
+ &lt; i &gt; - czcionka italic. Piszą, że używać w ostateczności jak semantycznie nic innego nie pasuje
+ &lt; ins &gt; - podkreśla tekst
+ &lt; kbd &gt; - zmienia czcionkę. Służy do pisania o klawiszach klawiatury
+ &lt; mark &gt; - zaznacza tekst kolorkiem
+ &lt; meter &gt; - fajna rzecz. Robi pasek postępu w zależności, jakie wartości mu podasz
+ &lt; pre &gt; - zmienia czcionkę na bardziej "kodową" oraz respektuje taby i entery
+ &lt; progress &gt; - to samo co meter tylko używane do progresu xD tez fajne a inny kolorek
+ &lt; q &gt; - dodaje apostrofy
+ &lt; rp rt ruby &gt; - taka niby potęga to pomaga przy znakach azjatyckich
+ &lt; s &gt; - przekreślenie
+ &lt; samp &gt; - zmienia czcionkę na bardziej "kodową"
+ &lt; small &gt; - zmniejsza czcionkę 
+ &lt; strong &gt; - pogrubienie
+ &lt; sub / sup &gt; - potęga i pierwiastek, wyżej niżej
+ &lt; template &gt; - kozak rzecz! W nim umieszczasz rzeczy i strona na początku ich nie renderuje, dopiero za pomocą JS możesz ich użyć, a potem wykorzystywać je bez końca bez tworzenia elementów w JS
+ &lt; time &gt; - generalnie nic nie robi i służy do umieszczania czasu
+ &lt; u &gt; - podkreśla tekst
+ &lt; var &gt; - nic nie robi, zmienia czcionkę...
+ &lt; wbr &gt; - definiuje wcięcie w p
+
+<h1>Formularze i przyciski</h1>
+<p onclick="show('a6')">< form > - może zawierać: </p>
+<table id="a6" style="display: none; color: #000;">
+<tbody>
+    <tr>
+      <th style="width:20%">Attribute</th>
+      <th style="width:37%">Value</th>
+      <th style="width:43%">Description</th>
+    </tr>
+    <tr>
+      <td><a href="att_form_accept_charset.asp">accept-charset</a></td>
+      <td><i>character_set</i></td>
+      <td>Specifies the character encodings that are to be used for the form submission</td>
+    </tr>
+    <tr>
+      <td><a href="att_form_action.asp">action</a></td>
+      <td><i>URL</i></td>
+      <td>Specifies where to send the form-data when a form is submitted</td>
+    </tr>
+    <tr>
+      <td><a href="att_form_autocomplete.asp">autocomplete</a></td>
+      <td>on<br>off</td>
+      <td>Specifies whether a form should have autocomplete on or off</td>
+    </tr>
+    <tr>
+      <td><a href="att_form_enctype.asp">enctype</a></td>
+      <td>application/x-www-form-urlencoded<br>
+        multipart/form-data<br>
+        text/plain</td>
+      <td>Specifies how the form-data should be encoded when submitting it to the server (only for method="post")</td>
+    </tr>
+    <tr>
+      <td><a href="att_form_method.asp">method</a></td>
+      <td>get<br>
+        post</td>
+      <td>Specifies the HTTP method to use when sending form-data</td>
+    </tr>
+    <tr>
+      <td><a href="att_form_name.asp">name</a></td>
+      <td><i>text</i></td>
+      <td>Specifies the name of a form</td>
+    </tr>
+    <tr>
+      <td><a href="att_form_novalidate.asp">novalidate</a></td>
+      <td>novalidate</td>
+      <td>Specifies that the form should not be validated when submitted</td>
+    </tr>
+    <tr>
+      <td><a href="att_form_rel.asp">rel</a></td>
+      <td>external<br>help<br>license<br>next<br>nofollow<br>noopener<br>
+      noreferrer<br>opener<br>prev<br>search</td>
+      <td>Specifies the relationship between a linked resource and the current 
+      document</td>
+    </tr>
+    <tr>
+      <td><a href="att_form_target.asp">target</a></td>
+      <td>_blank<br>
+        _self<br>
+        _parent<br>
+        _top</td>
+      <td>Specifies where to display the response that is received after submitting the form</td>
+    </tr></tbody></table>
+<ul style="white-space: nowrap;" >
+    <li style="color: red;" onclick="show('a2')">&lt;input&gt; - przycisk które ma rózne formy <ul style="display:none; white-space: nowrap; color: black;" id="a2">
+        <li>&lt;input type="button"&gt;</li>
+        <li>&lt;input type="checkbox"&gt;</li>
+        <li>&lt;input type="color"&gt;</li>
+        <li>&lt;input type="date"&gt;</li>
+        <li>&lt;input type="datetime-local"&gt;</li>
+        <li>&lt;input type="email"&gt;</li>
+        <li>&lt;input type="file"&gt;</li>
+        <li>&lt;input type="hidden"&gt;</li>
+        <li>&lt;input type="image"&gt;</li>
+        <li>&lt;input type="month"&gt;</li>
+        <li>&lt;input type="number"&gt;</li>
+        <li>&lt;input type="password"&gt;</li>
+        <li>&lt;input type="radio"&gt;</li>
+        <li>&lt;input type="range"&gt;</li>
+        <li>&lt;input type="reset"&gt;</li>
+        <li>&lt;input type="search"&gt;</li>
+        <li>&lt;input type="submit"&gt;</li>
+        <li>&lt;input type="tel"&gt;</li>
+        <li>&lt;input type="text"&gt; (default value)</li>
+        <li>&lt;input type="time"&gt;</li>
+        <li>&lt;input type="url"&gt;</li>
+        <li>&lt;input type="week"&gt;</li>
+        <li style="color: red;" onclick="show('a1')">dodatkowe parametry</li>
+        <table id="a1" style="display: none;" >
+            <tbody><tr>
+              <th style="width:22%">Attribute</th>
+              <th style="width:37%">Value</th>
+              <th style="width:41%">Description</th>
+            </tr>
+            <tr>
+              <td><a href="att_input_accept.asp">accept</a></td>
+              <td><em>file_extension</em><br>
+           audio/*<br>
+           video/*<br>
+           image/*<br>
+           <i>media_type</i></td>
+              <td>Specifies a filter for what file types the user can pick from the file 
+              input dialog box (only for type="file")</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_alt.asp">alt</a></td>
+              <td><i>text</i></td>
+              <td>Specifies an alternate text for images (only for type="image")</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_autocomplete.asp">autocomplete</a></td>
+              <td>on<br>
+           off</td>
+              <td>Specifies whether an &lt;input&gt; element should have autocomplete enabled</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_autofocus.asp">autofocus</a></td>
+              <td>autofocus</td>
+              <td>Specifies that an &lt;input&gt; element should automatically get focus when the page loads</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_checked.asp">checked</a></td>
+              <td>checked</td>
+              <td>Specifies that an &lt;input&gt; element should be pre-selected when the page loads (for type="checkbox" or type="radio")</td>
+            </tr>
+              <tr>
+              <td><a href="att_input_dirname.asp">dirname</a></td>
+              <td><i>inputname</i>.dir</td>
+              <td>Specifies that the text direction will be submitted</td>
+              </tr>
+            <tr>
+              <td><a href="att_input_disabled.asp">disabled</a></td>
+              <td>disabled</td>
+              <td>Specifies that an &lt;input&gt; element should be disabled</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_form.asp">form</a></td>
+              <td><i>form_id</i></td>
+              <td>Specifies the form the &lt;input&gt; element belongs to</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_formaction.asp">formaction</a></td>
+              <td><i>URL</i></td>
+              <td>Specifies the URL of the file that will process the input control when the form is submitted (for type="submit" and type="image")</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_formenctype.asp">formenctype</a></td>
+              <td>application/x-www-form-urlencoded<br>
+           multipart/form-data<br>
+           text/plain</td>
+              <td>Specifies how the form-data should be encoded when submitting it to the server (for type="submit" and type="image")</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_formmethod.asp">formmethod</a></td>
+              <td>get<br>post</td>
+              <td>Defines the HTTP method for sending data to the action URL (for type="submit" and type="image")</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_formnovalidate.asp">formnovalidate</a></td>
+              <td>formnovalidate</td>
+              <td>Defines that form elements should not be validated when submitted</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_formtarget.asp">formtarget</a></td>
+              <td>_blank<br>
+          _self<br>
+          _parent<br>
+          _top<br>
+           <em>framename</em></td>
+              <td>Specifies where to display the response that is received after submitting the form (for type="submit" and type="image")</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_height.asp">height</a></td>
+              <td><i>pixels</i></td>
+              <td>Specifies the height of an &lt;input&gt; element (only for type="image")</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_list.asp">list</a></td>
+              <td><i>datalist_id</i></td>
+              <td>Refers to a &lt;datalist&gt; element that contains pre-defined options for an &lt;input&gt; element</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_max.asp">max</a></td>
+              <td><i>number<br>
+           date</i></td>
+              <td>Specifies the maximum value for an &lt;input&gt; element</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_maxlength.asp">maxlength</a></td>
+              <td><i>number</i></td>
+              <td>Specifies the maximum number of characters allowed in an &lt;input&gt; element</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_min.asp">min</a></td>
+              <td><i>number<br>
+           date</i></td>
+              <td>Specifies a minimum value for an &lt;input&gt; element</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_minlength.asp">minlength</a></td>
+              <td><i>number</i></td>
+              <td>Specifies the minimum number of characters required in an &lt;input&gt; element</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_multiple.asp">multiple</a></td>
+              <td>multiple</td>
+              <td>Specifies that a user can enter more than one value in an &lt;input&gt; element</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_name.asp">name</a></td>
+              <td><i>text</i></td>
+              <td>Specifies the name of an &lt;input&gt; element</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_pattern.asp">pattern</a></td>
+              <td><em>regexp</em></td>
+              <td>Specifies a regular expression that an &lt;input&gt; element's value is checked against</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_placeholder.asp">placeholder</a></td>
+              <td><i>text</i></td>
+              <td>Specifies a short hint that describes the expected value of an &lt;input&gt; element</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_readonly.asp">readonly</a></td>
+              <td>readonly</td>
+              <td>Specifies that an input field is read-only</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_required.asp">required</a></td>
+              <td>required</td>
+              <td>Specifies that an input field must be filled out before submitting the form</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_size.asp">size</a></td>
+              <td><i>number</i></td>
+              <td>Specifies the width, in characters, of an &lt;input&gt; element</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_src.asp">src</a></td>
+              <td><i>URL</i></td>
+              <td>Specifies the URL of the image to use as a submit button (only for 
+              type="image")</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_step.asp">step</a></td>
+              <td>
+           <i>number<br></i>any</td>
+              <td>Specifies the interval between legal numbers in an input field</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_type.asp">type</a></td>
+              <td>button<br>
+                checkbox<br>
+           color<br>
+                date <br>
+              datetime-local <br>
+           email <br>
+                file<br>
+                hidden<br>
+                image<br>
+                month <br>
+           number <br>
+                password<br>
+                radio<br>
+                range <br>
+                reset<br>
+           search<br>
+                submit<br>
+           tel<br>
+                text<br>
+           time <br>
+           url<br>
+           week </td>
+              <td>Specifies the type &lt;input&gt; element to display</td>
+            </tr>
+            <tr>
+              <td><a href="att_input_value.asp">value</a></td>
+              <td><i>text</i></td>
+              <td>Specifies the value of an &lt;input&gt; element<b><br>
+           &nbsp;</b></td>
+            </tr>
+            <tr>
+              <td><a href="att_input_width.asp">width</a></td>
+              <td><i>pixels</i></td>
+              <td>Specifies the width of an &lt;input&gt; element (only for type="image")</td>
+            </tr>
+          </tbody></table>
+      </ul></li>
+    <li style="color: red;" onclick="show('a3')">&lt;textarea&gt; - Duże pole tekstowe
+        <table id="a3" style="display: none; color: #000;"> 
+            <tbody><tr>
+              <th style="width:20%">Attribute</th>
+              <th style="width:20%">Value</th>
+              <th style="width:60%">Description</th>
+            </tr>
+            <tr>
+              <td><a href="att_textarea_autofocus.asp">autofocus</a></td>
+              <td>autofocus</td>
+              <td>Specifies that a text area should automatically get focus when the page loads</td>
+            </tr>
+            <tr>
+              <td><a href="att_textarea_cols.asp">cols</a></td>
+              <td><i>number</i></td>
+              <td>Specifies the visible width of a text area</td>
+            </tr>
+              <tr>
+              <td><a href="att_textarea_dirname.asp">dirname</a></td>
+              <td><i>textareaname</i>.dir</td>
+              <td>Specifies that the text direction of the textarea will be submitted</td>
+              </tr>
+            <tr>
+              <td><a href="att_textarea_disabled.asp">disabled</a></td>
+              <td>disabled</td>
+              <td>Specifies that a text area should be disabled</td>
+            </tr>
+            <tr>
+              <td><a href="att_textarea_form.asp">form</a></td>
+              <td><i>form_id</i></td>
+              <td>Specifies which form the text area belongs to</td>
+            </tr>
+            <tr>
+              <td><a href="att_textarea_maxlength.asp">maxlength</a></td>
+              <td><i>number</i></td>
+              <td>Specifies the maximum number of characters allowed in the text area</td>
+            </tr>
+            <tr>
+              <td><a href="att_textarea_name.asp">name</a></td>
+              <td><i>text</i></td>
+              <td>Specifies a name for a text area</td>
+            </tr>
+            <tr>
+              <td><a href="att_textarea_placeholder.asp">placeholder</a></td>
+              <td><i>text</i></td>
+              <td>Specifies a short hint that describes the expected value of a text area</td>
+            </tr>
+            <tr>
+              <td><a href="att_textarea_readonly.asp">readonly</a></td>
+              <td>readonly</td>
+              <td>Specifies that a text area should be read-only</td>
+            </tr>
+            <tr>
+              <td><a href="att_textarea_required.asp">required</a></td>
+              <td>required</td>
+              <td>Specifies that a text area is required/must be filled out</td>
+            </tr>
+            <tr>
+              <td><a href="att_textarea_rows.asp">rows</a></td>
+              <td><i>number</i></td>
+              <td>Specifies the visible number of lines in a text area</td>
+            </tr>
+            <tr>
+              <td><a href="att_textarea_wrap.asp">wrap</a></td>
+              <td>hard<br>
+           soft</td>
+              <td>Specifies how the text in a text area is to be wrapped when submitted in a form</td>
+            </tr>
+          </tbody></table>
+    </li>
+    <li style="color: red;" onclick="show('a4')">&lt;button &gt; - Możesz tu dodawać elementy takie jak:< i >, < b >, < strong >, < br >, < img >, a w input nie mozesz
+        <table id="a4" style="display: none; color: #000;">
+            <tbody><tr>
+              <th style="width:25%">Attribute</th>
+              <th style="width:40%">Value</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td><a href="att_button_autofocus.asp">autofocus</a></td>
+              <td>autofocus</td>
+              <td>Specifies that a button should automatically get focus when the page loads</td>
+            </tr>
+            <tr>
+              <td><a href="att_button_disabled.asp">disabled</a></td>
+              <td>disabled</td>
+              <td>Specifies that a button should be disabled</td>
+            </tr>
+            <tr>
+              <td><a href="att_button_form.asp">form</a></td>
+              <td><i>form_id</i></td>
+              <td>Specifies which form the button belongs to</td>
+            </tr>
+            <tr>
+              <td><a href="att_button_formaction.asp">formaction</a></td>
+              <td><i>URL</i></td>
+              <td>Specifies where to send the form-data when a form is submitted. Only for type="submit"</td>
+            </tr>
+            <tr>
+              <td><a href="att_button_formenctype.asp">formenctype</a></td>
+              <td>application/x-www-form-urlencoded<br>
+           multipart/form-data<br>
+           text/plain</td>
+              <td>Specifies how form-data should be encoded before sending it to a server. Only for type="submit"</td>
+            </tr>
+            <tr>
+              <td><a href="att_button_formmethod.asp">formmethod</a></td>
+              <td>get<br>post</td>
+              <td>Specifies how to send the form-data (which HTTP method to use). Only for type="submit"</td>
+            </tr>
+            <tr>
+              <td><a href="att_button_formnovalidate.asp">formnovalidate</a></td>
+              <td>formnovalidate</td>
+              <td>Specifies that the form-data should not be validated on submission. Only for type="submit" </td>
+            </tr>
+            <tr>
+              <td><a href="att_button_formtarget.asp">formtarget</a></td>
+              <td>_blank<br>
+              _self<br>
+              _parent<br>
+              _top<br>
+              <i>framename</i></td>
+              <td>Specifies where to display the response after submitting the form. Only for type="submit"</td>
+            </tr>
+            <tr>
+              <td><a href="att_button_name.asp">name</a></td>
+              <td><i>name</i></td>
+              <td>Specifies a name for the button</td>
+            </tr>
+            <tr>
+              <td><a href="att_button_type.asp">type</a></td>
+              <td>button<br>
+                reset<br>
+                submit</td>
+              <td>Specifies the type of button</td>
+            </tr>
+            <tr>
+              <td><a href="att_button_value.asp">value</a></td>
+              <td><i>text</i></td>
+              <td>Specifies an initial value for the button</td>
+            </tr>
+          </tbody></table>
+    </li>
+    <li style="color: red;" onclick="show('a5')">&lt;select&gt; - rozwijane meni w którym są opcje oraz grupy opcji (optgroup oraz option)
+        <table id="a5" style="display: none; color: #000;"> 
+            <tbody><tr>
+              <th style="width:20%">Attribute</th>
+              <th style="width:20%">Value</th>
+              <th style="width:60%">Description</th>
+            </tr>
+            <tr>
+              <td><a href="att_select_autofocus.asp">autofocus</a></td>
+              <td>autofocus</td>
+              <td>Specifies that the drop-down list should automatically get focus when the page loads</td>
+            </tr>
+            <tr>
+              <td><a href="att_select_disabled.asp">disabled</a></td>
+              <td>disabled</td>
+              <td>Specifies that a drop-down list should be disabled</td>
+            </tr>
+            <tr>
+              <td><a href="att_select_form.asp">form</a></td>
+              <td><i>form_id</i></td>
+              <td>Defines which form the drop-down list belongs to</td>
+            </tr>
+            <tr>
+              <td><a href="att_select_multiple.asp">multiple</a></td>
+              <td>multiple</td>
+              <td>Specifies that multiple options can be selected at once</td>
+            </tr>
+            <tr>
+              <td><a href="att_select_name.asp">name</a></td>
+              <td><i>name</i></td>
+              <td>Defines a name for the drop-down list</td>
+            </tr>
+              <tr>
+              <td><a href="att_select_required.asp">required</a></td>
+              <td>required</td>
+              <td>Specifies that the user is required to select a value before submitting the form</td>
+              </tr>
+            <tr>
+              <td><a href="att_select_size.asp">size</a></td>
+              <td><i>number</i></td>
+              <td>Defines the number of visible options in a drop-down list</td>
+            </tr>
+          </tbody></table>
+    </li>
+    <li>&lt;fieldset&gt; - Dzieli elementy formularza na grupy</li>
+    <li>&lt;label&gt; - napis w formualrzu i nie tylko (można użyć for dla określenia do czego jest ten napis)</li>
+    <li>&lt;output&gt; - fajne można tym wykonywać obliczenia z innych inputów odwołanie do id przy zkorzystaniu z for</li>
+    </ul>
+< legend > - tytuł dla < fieldset >
+< datalist > - dzieli option na grupy i do tego niby pomaga przy podpowiadaniu
+<h1>Frame</h1>
+< iframe > -  
+<   > - 
+
+<script>
+    function show(a) {
+        let b = document.getElementById(a)
+        b.style.display == "none" ? b.style.display = "block" : b.style.display = "none";
+        console.log(b.style.display)
+        
+    }
+</script>
+</pre>
+
+
+</body>
+
+</html>
