@@ -51,7 +51,7 @@ image1.addEventListener('load', () => {
             this.speed = 0;
             this.velocity = Math.random() * 1;
             this.size = Math.random() * 1 + 1;
-            this.position1 = math.flo
+            this.position1 = math.floor()
         }
         update() {
             this.y += this.velocity;
